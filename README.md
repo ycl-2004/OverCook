@@ -1,14 +1,16 @@
-Project following the tutorial from Code Monkey on Youtube with link https://www.youtube.com/watch?v=AmGSEH7QcDg as the starting point.
-Adjust the code and add additional functionality to enhance the game play environments and user experiences.
+Project Based on Code Monkey's Tutorial
+Using the tutorial from Code Monkey on YouTube (https://www.youtube.com/watch?v=AmGSEH7QcDg) as a starting point, this project expands upon the original implementation by adding new features and functionalities to enhance gameplay environments and user experience.
 
-Currently implemented...
-1. Additional logics on ingredient objects react between each others.
-   - Increase player's interactions possibilities
-   - Increase mix-match between creation of menus
-2. Rewards time with player delivered right recipes with UI elements displayed
+Currently Implemented Features:
+1. Additional logic for ingredient objects to interact with each other.
+2. Expanded player interaction possibilities.
+3. Increased variety in menu creation through mix-and-match mechanics.
+4. A reward system where players gain additional time for delivering correct recipes, along with UI elements to display feedback.
+   
+Future/Continuous Updates:
 
-Future/ Continuous Code updating
-3. Levels adjustment
-4. Users controllable on interaction speed and additional features
-5. Multi-Players environments
-6. UI image improvements
+1. Regular code updates to improve functionality.
+2. Level adjustments to ensure balanced gameplay progression.
+3. User-controlled interaction speed and additional features for more customization.
+4. Support for multiplayer environments.
+5. Enhanced UI with improved imagery and design elements.
