@@ -53,4 +53,9 @@ public class PlateKitchenObj : KitchenObj
     public float GetAddedTimeRatio(){
         return ((float)ReturnScore(singleElementScore)/(float)fullElementScore)*addedTimeRatio;
     }
+
+    public float GetAddTimeOriRatio(){
+        return addedTimeRatio;
+    }
+
 }

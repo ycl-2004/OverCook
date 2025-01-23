@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     private float gamePlayingTimerMax = 10f;
     private bool isGamePause = false;
 
+    private int maxTimeAdd = 20;
+
     private void Awake(){
         Instance = this;
         state = State.WaitingToStart;
@@ -102,9 +104,17 @@ public class GameManager : MonoBehaviour
 
     public void AddtoGameTimer(float addedTime){
         gamePlayingTimer+=addedTime;
+
+        if(gamePlayingTimer>gamePlayingTimerMax){
+            gamePlayingTimer= gamePlayingTimerMax;
+        }
     }
 
     public float GetMaxPlayingTime(){
         return gamePlayingTimerMax;
+    }
+
+    public int GetMaxTimeAdd(){
+        return maxTimeAdd;
     }
 }

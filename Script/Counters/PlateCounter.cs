@@ -68,12 +68,6 @@ public class PlateCounter : BaseCounter
                 if (plateKO.TryGetComponent<PlateKitchenObj>(out PlateKitchenObj plateKitchenObj)) {
                     plateKitchenObj.TryAddIngredient(ingredientSO);
                 }
-            } else if(player.GetKitchenObj().TryGetPlate(out PlateKitchenObj plateKitchenObj)){  
-                // Player is holding a plate - handle existing plate logic
-                // do not do anything
-            } else {
-                // Player is holding something that can't interact with plates
-                kt.SetKitchenObjectParents(this);
             }
         }
     }

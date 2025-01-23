@@ -73,9 +73,8 @@ public class DeliveryManager : MonoBehaviour
                     //player delivered the correct recipe!
                     Debug.Log("Right Recipe");
                     deliveredAmount++;
-                    Debug.Log(plateKitchenObj.GetAddedTimeRatio());
-                    GameManager.Instance.AddtoGameTimer(GameManager.Instance.GetMaxPlayingTime()*plateKitchenObj.GetAddedTimeRatio());
-                    addedtime = GameManager.Instance.GetMaxPlayingTime()*plateKitchenObj.GetAddedTimeRatio();
+                    GameManager.Instance.AddtoGameTimer(GameManager.Instance.GetMaxTimeAdd()*plateKitchenObj.GetAddedTimeRatio()/plateKitchenObj.GetAddTimeOriRatio());
+                    addedtime = 100*plateKitchenObj.GetAddedTimeRatio();
                     waitingRecipe.RemoveAt(i);
 
                     OnRecipeDone?.Invoke(this,EventArgs.Empty);
